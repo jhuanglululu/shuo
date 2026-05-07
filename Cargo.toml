@@ -1,0 +1,13 @@
+[package]
+name = "shuo"
+version = "1.0.0"
+edition = "2024"
+description = "A tiny logging crate that just shuo — colored info!, error!, and error_out! macros."
+license = "MIT"
+repository = "https://github.com/jhuanglululu/shuo"
+readme = "README.md"
+keywords = ["logging", "log", "println", "color", "macro"]
+categories = ["development-tools::debugging"]
+
+[dependencies]
+colored = "3.1.1"
