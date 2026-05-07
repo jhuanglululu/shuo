@@ -1,5 +1,3 @@
-use colored::Colorize;
-
 #[macro_export]
 macro_rules! info {
     ($($arg:tt)*) => {{
@@ -8,7 +6,7 @@ macro_rules! info {
 }
 
 pub fn info_print(message: String) {
-    println!("{:}: {}", "info".green().bold(), message);
+    println!("\x1b[1;32minfo\x1b[0m: {}", message);
 }
 
 #[macro_export]
@@ -27,5 +25,15 @@ macro_rules! error_out {
 }
 
 pub fn error_print(message: String) {
-    eprintln!("{:}: {}", "error".red().bold(), message);
+    eprintln!("\x1b[1;31merror\x1b[0m: {}", message);
+}
+
+#[cfg(test)]
+mod tests {
+
+    #[test]
+    fn test_ansi() {
+        info!("hello");
+        error!("world");
+    }
 }
