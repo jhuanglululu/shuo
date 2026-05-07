@@ -2,7 +2,7 @@
 name = "shuo"
 version = "1.0.0"
 edition = "2024"
-description = "A tiny logging crate that just shuo — colored info!, error!, and error_out! macros."
+description = "Crate that just shuo — info!, error!, and error_out! macros."
 license = "MIT"
 repository = "https://github.com/jhuanglululu/shuo"
 readme = "README.md"
