@@ -1,8 +1,8 @@
 [package]
 name = "shuo"
-version = "1.0.0"
+version = "1.1.0"
 edition = "2024"
-description = "Crate that just shuo — info!, error!, and error_out! macros."
+description = "Crate that just shuo — info!, error!, error_out!, and *_or_error_out! macros."
 license = "MIT"
 repository = "https://github.com/jhuanglululu/shuo"
 readme = "README.md"
